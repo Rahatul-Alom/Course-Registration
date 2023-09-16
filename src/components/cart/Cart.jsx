@@ -2,7 +2,7 @@
 const Cart = ({selectedCourse, remainig, totalCredit}) => {
     return (
         <div className="px-2">
-            <h2 className="text-xl font-bold mb-3 text-blue-900">Credit Hour Remaining {remainig} hr </h2>
+            <h2 className="text-xl font-bold my-3 py-3 text-blue-900">Credit Hour Remaining {remainig} hr </h2>
             <hr />
             <h2 className="text-xl font-bold my-3">Course Name</h2>
             <ol className="list-decimal list-inside text-sm">

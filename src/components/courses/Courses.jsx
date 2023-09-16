@@ -80,7 +80,7 @@ const Courses = () => {
             ))
         }
         </div>
-      <div className="bg-gray-500 rounded-xl p-2 mt-10 w-[700px]">
+      <div className="shadow-xl rounded-xl p-2 mt-10 md:w-[700px] lg:w-[700px] h-[500px]">
       <Cart selectedCourse = {selectedCourse} remainig = {remainig} totalCredit ={totalCredit}></Cart>
       </div>  
 
