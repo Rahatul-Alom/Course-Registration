@@ -8,6 +8,7 @@ const Courses = () => {
   const [courses, setCourse] = useState([]);
   const [selectedCourse, setSelectedCourse] = useState([])
   const [remainig, setRemainig] = useState([])
+  const [totalCredit, setTotalCredit] = useState([])
 
   useEffect(() => {
     fetch("./data.json")
@@ -28,6 +29,7 @@ const Courses = () => {
       console.log(count)
       const totalRemainig = 20-count;
       setRemainig(totalRemainig);
+      setTotalCredit(count)
       console.log(totalRemainig);
       setSelectedCourse([...selectedCourse, course])
     }
@@ -64,7 +66,7 @@ const Courses = () => {
         }
         </div>
       <div className="bg-gray-500 rounded-xl p-2 mt-10 w-[700px]">
-      <Cart selectedCourse = {selectedCourse} remainig = {remainig}></Cart>
+      <Cart selectedCourse = {selectedCourse} remainig = {remainig} totalCredit ={totalCredit}></Cart>
       </div>  
 
    </div>
